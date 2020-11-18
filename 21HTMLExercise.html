@@ -46,12 +46,13 @@
         
         button {
             float: right;
-            background-color: white; /* Green */
+            background-color: white;
             color: black;
             padding: 10px 20px;
             text-decoration: none;
             font-size: 16px;
             transition: all 0.3s;
+            cursor: pointer;
         }
         
         button:hover {
@@ -60,9 +61,50 @@
             transition: all 0.3s;
         }
         
+        button:active {
+            background-color: white;
+            color: black;
+        }
+        
+        button.button:hover {
+            background-color: black;
+            opacity: 0.5;
+        }
+
+        .red {
+            background-color: red;
+            margin-left: 20px;
+            position: absolute;
+            top: 50px;
+        }
+        .green {
+            background-color: green;
+            margin-left: 20px;
+            position: absolute;
+            top: 80px;
+        }
+        .blue {
+            background-color: blue;
+            margin-left: 20px;
+            position: absolute;
+            top: 110px;
+        }
+        
+        .crimson {
+            background-color: crimson;
+            margin-left: 20px;
+            position: absolute;
+            top: 140px;
+        }
+        
     </style>
 </head>
 <body>
+    
+    <div><button class="button red" onclick="changeBgToRed()"></button></div>
+    <div><button class="button green" onclick="changeBgToGreen()"></button></div>
+    <div><button class="button blue" onclick="changeBgToBlue()"></button></div>
+    <div><button class="button crimson" onclick="changeBgToCrimson()"></button></div>
     <div class="form-box">
         <div class="signup">Sign Up</div>
         <p>Username</p>
@@ -101,5 +143,24 @@
             confirm_password = document.getElementById("confirm_password").value = "";
         }   
     }
+
+    const changeBgToRed = () => {
+        var body = document.body;
+        body.style.backgroundColor = "red";
+    }
+    const changeBgToGreen = () => {
+        var body = document.body;
+        body.style.backgroundColor = "green";
+    }
+    const changeBgToBlue = () => {
+        var body = document.body;
+        body.style.backgroundColor = "blue";
+    }
+    
+    const changeBgToCrimson = () => {
+        var body = document.body;
+        body.style.backgroundColor = "crimson";
+    }
+    
 </script>
 </html>
