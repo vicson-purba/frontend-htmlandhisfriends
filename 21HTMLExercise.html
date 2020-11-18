@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Exercise</title>
+    <style>
+        body {
+            background-color: crimson;
+            font-family: monospace;
+        }
+        
+        .form-box {
+            width: 90%;
+            max-width: 500px;
+            margin: 300px auto;
+            padding: 50px;
+            padding-bottom: 60px;
+            background-color: white;
+            border-radius: 8px;
+        }
+        
+        p {
+            font-size: 15px;
+        }
+        
+        .signup {
+            text-align: center;
+            font-size: 20px;
+            font-weight: bolder
+        }
+        
+        input {
+            width: 100%;
+            padding: 2px;
+            font-size: 18px;
+            border: 3px solid rgba(128, 128, 128, 0.199);
+            margin-top: 5px;
+        }
+        
+        input::-webkit-input-placeholder {
+            font-family: monospace;
+            font-size: 15px;
+            line-height: 3;
+}
+        
+        button {
+            float: right;
+            background-color: white; /* Green */
+            color: black;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+        
+        button:hover {
+            background-color: crimson;
+            color: white;
+            transition: all 0.3s;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="form-box">
+        <div class="signup">Sign Up</div>
+        <p>Username</p>
+        <input type="text" id="username" placeholder=" name">
+        <p>Email</p>
+        <input type="text" id="email" placeholder=" email">
+        <p>Password</p>
+        <input type="password" id="password" placeholder=" password">
+        <p>Confirm Password</p>
+        <input type="password" id="confirm_password" placeholder=" confirm password">
+        <br>
+        <br>
+        <button onclick="register()">Register</button>
+    </div>
+</body>
+<script>
+    const register = () => {
+        var username = document.getElementById("username").value;
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+        var confirm_password = document.getElementById("confirm_password").value;
+        console.log(username);
+        console.log(email);
+        console.log(password);
+        console.log(confirm_password);
+        
+        if (password === confirm_password) {
+            alert("Register successful");
+            username = document.getElementById("username").value = "";
+            email = document.getElementById("email").value = "";
+            password = document.getElementById("password").value = "";
+            confirm_password = document.getElementById("confirm_password").value = "";
+        } else {
+            alert("Invalid password");
+            password = document.getElementById("password").value = "";
+            confirm_password = document.getElementById("confirm_password").value = "";
+        }   
+    }
+</script>
+</html>
