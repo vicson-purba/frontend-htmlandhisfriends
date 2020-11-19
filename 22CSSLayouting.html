@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layouting</title>
+    <style>
+        .custom-btn {
+            color: azure;
+            padding: 20px;
+            outline: none;/* outline is shortband outline-width, outline-style outline-color */
+            display: inline-block; /* inline-block = vertikal like inline + sifat element block */
+        }
+        .red {
+            background-color: red
+        }
+            
+        .blue {
+            background-color: blue;
+        }
+        
+        #idButton {
+            background-color: black;
+            padding: 10px;
+            color: white;
+        }
+        
+        .header {
+            text-align: center;
+            background-color: tomato;
+            color: white;
+        }
+        
+        .header-title {
+            color: white;
+            font-size: 40px;
+            font-family: "Arial", "Helvetica", sans-serif;   
+        }
+        
+        .content-container {
+            display: flex;
+            flex-direction: row;
+            margin: 20px;
+        }
+        
+        .center {
+           justify-content: center;
+        }
+        
+        .flex-end {
+            justify-content: flex-end;
+        }
+        
+        .flex-start {
+            justify-content: flex-start;
+        }
+        
+        .space-between {
+            justify-content: space-between;
+        }
+        
+        .space-around {
+            justify-content: space-around;
+        }
+        
+        .square {
+            width: 500px;
+            height: 100px
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Class -->
+    <!-- Class is shareable rules css -->
+    <!-- id is non-shareable rules css -->
+    <div style="width: 500px; height: 700px"><!-- '%' relative to his parents div -->
+        <div style="background-color: red; height: 50%">Hello</div>
+        <div style="background-color: blue; color: white; height: 30%">Hello Juga</div>
+    </div>
+    <button class="custom-btn red">
+        click me
+    </button>
+    <button class="custom-btn blue">
+        wut
+    </button>
+    <button id="idButton">
+        id Button
+    </button>
+    <!-- Div -->
+    <!-- Div = divider -->
+    <!-- Flexbox -->
+    <div>
+        <div class="header">
+            <div class="header-title">Header</div>
+        </div>
+        <div class="content-container center">
+            <div>Content 1</div>
+            <div>Content 2</div>
+            <div>Content 3</div>
+        </div>
+        <div class="content-container flex-end">
+            <div>Content 1</div>
+            <div>Content 2</div>
+            <div>Content 3</div>
+        </div>
+        <div class="content-container flex-start">
+            <div>Content 1</div>
+            <div>Content 2</div>
+            <div>Content 3</div>
+        </div>
+        <div class="content-container space-between">
+            <div>Content 1</div>
+            <div>Content 2</div>
+            <div>Content 3</div>
+        </div>
+        <div class="content-container space-around">
+            <div>Content 1</div>
+            <div>Content 2</div>
+            <div>Content 3</div>
+        </div>
+        <div class="content-container space-around">
+            <div class="square red">Content 1</div>
+            <div class="square red">Content 1</div>
+            <div class="square red">Content 1</div>
+        </div>
+    </div>
+    
+    <!-- Class -->
+</body>
+</html>
