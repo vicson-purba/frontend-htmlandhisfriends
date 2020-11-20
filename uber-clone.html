@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore the Uber Platform | Uber United States</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+   <header>
+       <div class="menu-1">
+           <div class="uber-logo" style="color: white; "><a href="#" style="color: white">Uber</a></div>
+           <div style="color: white" onclick="btnListClicked1()" class="company">
+                Company
+                <ul id="dropdown-1" class="dropdown1-content">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Our offerings</a></li>
+                    <li><a href="#">How Uber works</a></li>
+                    <li><a href="#">Global citizenship</a></li>
+                    <li><a href="#">Newsroom</a></li>
+                    <li><a href="#">Investor relations</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+           <div style="color: white">Safety</div>
+           <div style="color: white">Help</div>
+           <div style="color: white; width: 137px">COVID-19 resources</div>
+       </div>
+       <div class="menu-2">
+           <div style="color: white">Icon</div>
+           <div style="color: white" onclick="btnListClicked2()">
+               Products
+               <ul id="dropdown-2" class="dropdown2-content">
+                   <li><a href="#">Home</a></li>
+                   <li><a href="#">Ride</a></li>
+                   <li><a href="#">Drive</a></li>
+                   <li><a href="#">Eat</a></li>
+                   <li><a href="#">Restaurants</a></li>
+                   <li><a href="#">Freight</a></li>
+                   <li><a href="#">Bike & scoot</a></li>
+                   <li><a href="#">Transit</a></li>
+                   <li><a href="#">Business</a></li>
+                   <li><a href="#">Elevate</a></li>
+                   <li><a href="#">Money</a></li>
+               </ul>
+           </div>
+           <div style="color: white">LogIn</div>
+           <div style="color: white">Sign up</div>
+       </div>
+   </header>
+   <main></main>
+   <footer></footer> 
+</body>
+<script>
+    const btnListClicked1 = () => {
+        document.getElementById("dropdown-1").classList.toggle("dropdown-1-show");
+    }
+
+    const btnListClicked2 = () => {
+        document.getElementById("dropdown-2").classList.toggle("dropdown-2-show");
+    }
+
+    window.onclick = (event) => {
+        
+    }
+</script>
+</html>
