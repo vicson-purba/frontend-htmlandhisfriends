@@ -69,3 +69,513 @@ body {
     font-size: 14px;
     /* font-weight: 600; */
   }
+
+.block1-container {
+    display: flex;
+    background-color: black;
+    padding-left: 340px;
+    padding-right: 340px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.block1-left {
+    margin-right: 100px
+}
+
+.block1-left h1 {
+    color: white;
+    font-size: 52px;
+    font-weight: 500;
+    width: 400px;
+    line-height: 64px;
+    letter-spacing: -2px;
+}
+
+.block1-left p {
+    color: white;
+    font-size: 16px;
+    width: 500px;
+}
+
+.block1-button {
+    background-color: white;
+    border: none;
+    outline: none;
+    padding: 14px 25px;
+    margin-top: 20px;
+    transition: all 0.3s;
+}
+
+.block1-button:hover {
+    background-color: rgb(226, 226, 226);
+    transition: all 0.3s
+}
+
+.block1-button a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.block1-right img {
+    width: 550px;
+}
+
+.block2-container {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 0 300px 450px ;
+    background: url(./images/eats-hero-desktop-5.jpg);
+    background-size: cover;
+}
+
+.products-container {
+    display: flex;
+    justify-content: flex-start;
+    background-color: white;
+    width: 1036px;
+    overflow-y: scroll;
+}
+
+.eat-part, .ride-part, .earn-part, .freight-part, .business-part, .transit-part, .bike-part, .elevate-part {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+}
+.eat-part div, .ride-part div, .earn-part div, .freight-part div, .business-part div, .transit-part div, .bike-part div, .elevate-part div {
+    padding-top: 10px;
+    transition: all 0.3s;
+}
+
+
+.eat-part div:hover, .ride-part div:hover, .earn-part div:hover, .freight-part div:hover, .business-part div:hover, .transit-part div:hover, .bike-part div:hover, .elevate-part div:hover {
+    color: rgb(84, 84, 84);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.delivery-info {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding-left: 34px;
+    width: 450px
+}
+
+.delivery-info h2 {
+    font-size: 52px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+}
+
+.delivery-info p {
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.btn-link {
+    margin-bottom: 34px;
+}
+
+.order-btn {
+    background-color: black;
+    border: none;
+    outline: none;
+    padding: 14px 25px;
+    margin-top: 20px;
+    transition: all 0.3s;
+}
+
+.order-btn a {
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    
+}
+
+.order-btn:hover {
+    background-color: rgb(51, 51, 51);
+}
+
+.order-btn a, .partner-btn a {
+    text-decoration: none;
+}
+
+
+.partner-btn {
+    background-color: white;
+    border: none;
+    border-bottom: 2px solid rgba(220, 221, 225,1.0);
+    margin-left: 17px;
+    transition: all 0.3s;
+}
+
+.partner-btn a {
+    color: black;
+    font-size: 15px;
+}
+
+.block3-container {
+    background: url(./images/Modalities_banner_home.jpg);
+    background-size: cover;
+    padding-left: 500px;
+    padding-bottom: 660px;
+    padding-top: 20px;
+}
+
+.block3-container h2 {
+    font-size: 32px;
+    width: 400px;
+}
+
+.btn-cities button {
+    background-color: #f6f6f6;
+    border: none;
+    border-bottom: 2px solid rgba(220, 221, 225,1.0);
+    padding-left: 0px;
+    transition: all 0.3s;
+}
+
+.btn-cities button a {
+    color: black;
+    font-size: 16px;
+    font-family: "Uber Move Medium";
+    text-decoration: none;
+}
+
+.block4-container {
+    padding-left: 450px;
+    padding-right: 340px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.block4-container > h2 {
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.block4-container > p {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.business-container {
+    display: flex;
+    padding-top: 10px;
+}
+
+.meals-container img, .employee-container img, .courtesy-container img {
+    width: 290px;
+}
+
+.meals-container h3, .employee-container h3, .courtesy-container h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.meals-container p, .employee-container p, .courtesy-container p{
+    font-size: 16px;
+    font-weight: normal;
+    width: 318px;
+}
+
+.meals-container button, .employee-container button, .courtesy-container button {
+    background-color: white;
+    border: none;
+    border-bottom: 2px solid rgba(220, 221, 225,1.0);
+    padding-top: 15px;
+    padding-left: 0px;
+    transition: all 0.3s;
+}
+
+.meals-container button a, .employee-container button a, .courtesy-container button a {
+    color: black;
+    font-size: 16px;
+    font-family: "Uber Move Medium";
+    text-decoration: none;
+}
+
+.safety-container {
+    display: flex;
+    padding-top: 100px;
+}
+
+.safety-info h2 {
+    font-size: 36px;
+    font-weight: 500;
+    width: 400px;
+}
+
+.safety-info p {
+    font-size: 16px;
+    font-weight: normal;
+    width: 420px;
+    margin-bottom: 25px;
+}
+
+.safety-info div button {
+    background-color: white;
+    border: none;
+    border-bottom: 2px solid rgba(220, 221, 225,1.0);
+    padding-top: 20px;
+    padding-left: 0px;
+    transition: all 0.3s;
+}
+
+.safety-info div button a {
+    color: black;
+    font-size: 16px;
+    font-family: "Uber Move Medium";
+    text-decoration: none;
+}
+
+.safety-img {
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.about-container {
+    display: flex;
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+.about-us h3, .newsroom h3, .global h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.about-us p, .newsroom p, .global p {
+    font-size: 16px;
+    font-weight: 100;
+    width: 380px;
+}
+
+.about-us button, .newsroom button, .global button {
+    background-color: white;
+    border: none;
+    border-bottom: 2px solid rgba(220, 221, 225,1.0);
+    padding-top: 10px;
+    padding-left: 0px;
+    transition: all 0.3s;
+}
+
+.about-us button a, .newsroom button a, .global button a {
+    color: black;
+    font-size: 16px;
+    font-family: "Uber Move Medium";
+    text-decoration: none;
+}
+
+.to-drive, .to-ride {
+    font-size: 36px;
+    font-weight: 600;
+    background-color: white;
+    border: none;
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-left: 0px;
+    padding-bottom: 30px;
+    transition: all 0.3s;
+    width: 500px;
+    text-align: left;
+}
+
+.to-drive {
+    margin-right: 50px;
+}
+
+.to-drive span  {
+    position: relative;
+    top: 10px;
+    left: 180px;
+}
+
+.to-ride span {
+    position: relative;
+    top: 10px;
+    left: 200px;
+}
+
+.to-drive:hover, .to-ride:hover {
+    cursor: pointer;
+}
+
+.block5-container {
+    background-color: black;
+    padding-top: 40px;
+    padding-left: 350px;
+    padding-right: 400px;
+    padding-bottom: 40px;
+}
+
+.block5-container > p {
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    font-size: 14px;
+    font-weight: 100;
+    
+}
+
+.block5-container > p:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.block5-container > a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+
+.block5-container > button {
+    display: flex;
+    border: none;
+    outline: none;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-left: 0px;
+    background-color: black;
+}
+
+.block5-container > button a {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.block5-container > button:hover {
+    border-bottom: 2px solid white;
+    cursor: pointer;
+    
+}
+
+.about-company {
+    display: flex;
+    margin-top: 20px;
+}
+
+.company, .products, .citizenship {
+    margin-right: 200px;
+}
+
+.company div, .products div, .citizenship div, .innovation div {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 20px;
+    width: 150px;
+}
+
+.company div a, .products div a, .citizenship div a, .innovation div a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.company div a:hover, .products div a:hover, .citizenship div a:hover, .innovation div a:hover {
+    color: #dcdde1;
+} 
+
+.logo-company {
+    display: flex;
+    padding-top: 30px;
+}
+
+.media-socials {
+    display: flex;
+}
+
+.media-socials div {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.tw, .fa, .yo {
+    margin-right: 10px;
+}
+
+.tw:hover, .fa:hover, .yo:hover, .li:hover {
+    color: #dcdde1;
+    cursor: pointer;
+}
+
+.locations {
+    display: flex;
+    margin-left: 100px;
+}
+
+.locations div {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.irl-location {
+    margin-left: 20px;
+}
+
+.language:hover, .irl-location:hover {
+    color: #dcdde1;
+    cursor: pointer;
+}
+
+.online-stores {
+    display: flex;
+}
+
+.online-stores div {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.google-play {
+    margin-right: 20px;
+    margin-left: 310px;
+}
+
+.google-play:hover, .apps-store:hover {
+    color: #dcdde1;
+    cursor: pointer;
+}
+
+.small-footer {
+    display: flex;
+}
+
+.trademarks {
+    color: white;
+    font-size: 12px;
+    padding-top: 60px;
+    margin-right: 795px;
+    opacity: 0.5;
+}
+
+.terms-privacy {
+    display: flex;
+}
+
+.terms-privacy div {
+    color: white;
+    font-size: 12px;
+    padding-top: 60px;
+    opacity: 0.5;
+}
+
+.privacy, .access {
+    margin-right: 30px;
+}
+
+.privacy:hover, .access:hover, .term:hover {
+    color: #dcdde1;
+    cursor: pointer;
+}
+
