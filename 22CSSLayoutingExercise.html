@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -124,4 +125,134 @@
         document.getElementById("graph-5").style.height = graphs[4];   
     }
 </script>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .graph-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+        height: 1000px;
+        
+    }
+    
+    .graph-item {
+        width: 50%;
+        height: 50%;
+        background-color: aqua;
+        margin: 20px;
+        transition: all 0.3s;  
+    }
+
+    .graph-item:hover {
+        background-color: cadetblue;
+        cursor: pointer;
+    }
+
+    .btn {
+        position: absolute;
+        top: 700px;
+    }
+    
+</style>
+<body>
+    <div class="graph-container">
+        <div class="graph-item" style="height: 50%" id="graph-1" onclick="checkGraph1()"></div>
+        <div class="graph-item" style="height: 30%" id="graph-2" onclick="checkGraph2()"></div>
+        <div class="graph-item" style="height: 10%" id="graph-3" onclick="checkGraph3()"></div>
+        <div class="graph-item" style="height: 40%"  id="graph-4" onclick="checkGraph4()"></div>
+        <div class="graph-item" style="height: 60%"  id="graph-5" onclick="checkGraph5()"></div>
+    </div>
+    <div class="btn">
+        <button onclick="sortToLowest()">Lowest</button>
+        <button onclick="lowestNope()">Don't sort to lowest</button>
+    </div>
+</body>
+<script>
+    const checkGraph1 = () => {
+        var graph1 = document.getElementById("graph-1").style.height;
+        console.log(graph1);
+        alert(`${graph1}`);
+    }
+    const checkGraph2 = () => {
+        var graph2 = document.getElementById("graph-2").style.height;
+        console.log(graph2);
+        alert(`${graph2}`);
+    }
+    const checkGraph3 = () => {
+        var graph3 = document.getElementById("graph-3").style.height;
+        console.log(graph3);
+        alert(`${graph3}`);
+    }
+    const checkGraph4 = () => {
+        var graph4 = document.getElementById("graph-4").style.height;
+        console.log(graph4);
+        alert(`${graph4}`);
+    }
+    const checkGraph5 = () => {
+        var graph5 = document.getElementById("graph-5").style.height;
+        console.log(graph5);
+        alert(`${graph5}`);
+    }
+
+    const sortToLowest = () => {
+        var graph1 = document.getElementById("graph-1").style.height;
+        var graph2 = document.getElementById("graph-2").style.height;
+        var graph3 = document.getElementById("graph-3").style.height;
+        var graph4 = document.getElementById("graph-4").style.height;
+        var graph5 = document.getElementById("graph-5").style.height;
+        console.log(graph1);
+        console.log(graph2);
+        console.log(graph3);
+        console.log(graph4);
+
+        var graphs = [graph1, graph2, graph3, graph4, graph5]
+        console.log(graphs);
+        graphs.sort();
+        console.log(graphs)
+        graph1 = graphs[0];
+        graph2 = graphs[1];
+        graph3 = graphs[2];
+        graph4 = graphs[3];
+        graph5 = graphs[4];
+
+        document.getElementById("graph-1").style.height = graph1;
+        document.getElementById("graph-2").style.height = graph2;
+        document.getElementById("graph-3").style.height = graph3;
+        document.getElementById("graph-4").style.height = graph4;
+        document.getElementById("graph-5").style.height = graph5;
+    }
+
+    const lowestNope = () => {
+        var graph1 = document.getElementById("graph-1").style.height;
+        var graph2 = document.getElementById("graph-2").style.height;
+        var graph3 = document.getElementById("graph-3").style.height;
+        var graph4 = document.getElementById("graph-4").style.height;
+        var graph5 = document.getElementById("graph-5").style.height;
+        console.log(graph1);
+        console.log(graph2);
+        console.log(graph3);
+        console.log(graph4);
+        console.log(graph5);
+
+        var graphs = [graph1, graph2, graph3, graph4, graph5];
+        console.log(graphs);
+        console.log(graphs[0]);
+        document.getElementById("graph-1").style.height = graphs[3];
+        document.getElementById("graph-2").style.height = graphs[1];
+        document.getElementById("graph-3").style.height = graphs[0];
+        document.getElementById("graph-4").style.height = graphs[2];
+        document.getElementById("graph-5").style.height = graphs[4];
+
+        
+    }
+</script>
+>>>>>>> 6f2a215f26919a025c5a3d10159d114211153559
 </html>
