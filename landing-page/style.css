@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Cousine&display=swap');
+
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Cousine', monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.header {
+  background-color: black;
+}
+
+/* .header .navbar {
+  padding: 0;
+} */
+
+.header .navbar.navbar-light .navbar-brand {
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.header .navbar #collapsibleNavbar .nav-item .nav-link {
+  color: #fff;
+  font-size: 15px;
+  padding: 0 10px;
+  text-transform: uppercase;
+}
+
+.header .navbar #collapsibleNavbar .nav-item .nav-link:hover {
+  font-weight: 600;
+}
+
+.header .navbar #collapsibleNavbar .nav-item .nav-link.active {
+  font-weight: 600;
+}
+
+.home-section {
+  background-color: white;
+  padding: 250px 0 200px;
+}
+
+.home-section .home-content {
+  padding-top: 90px;
+}
+
+.home-section .home-content h1 {
+  font-size: 40px;
+  font-weight: 600;
+  padding: 10px 0;
+}
+
+.mybtn1 {
+  background-color: black;
+  color: white;
+}
+
+.mybtn1:hover {
+  color: white;
+  font-weight: 600;
+}
+
+.home-section .home-content h2 {
+  padding: 10px 0;
+}
+
+.home-section .home-img img {
+  max-width: 400px;
+  width: 100%;
+  position: absolute;
+  border: 12px solid black;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  margin-left: 40px;
+}
