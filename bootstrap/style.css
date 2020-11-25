@@ -1,0 +1,12 @@
+.main-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .login {
+    margin: 20px 0;
+  }
+  
+  .custom-card {
+    margin: 0 10px !important;
+  }
